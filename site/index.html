@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Kaitlyn Randolph</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar" id="top">
+		<div>
+	    	<a id="brand" href="#top" onmouseover="this.innerHTML='kaitlyn.io';"
+              onmouseout="this.innerHTML='kaitlyn randolph';">kaitlyn randolph</a>
+	    </div>
+		<ul>
+			<li><a href="#about">about me</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#resume">résumé</a></li>
+		</ul>
+	</nav>
+	<div class="site-wrapper">
+		<div class="scrolling-text">
+			<p id="text"></p>
+		</div>
+		<script>
+			/* Adapted from https://www.w3schools.com/howto/howto_js_typewriter.asp */
+			var i = 0;
+			var j = 0;
+			var speed = 80;
+			let txt = ["Hi, I'm Kaitlyn.", " I'm a web developer.", " Thanks for checking out my website."];
+
+			function typeWriter() {
+			  	if (i < txt[j].length) {
+				    document.getElementById("text").innerHTML += txt[j].charAt(i);
+				    /*if (j > 0 && i == 0) {
+				    	setTimeout(typeWriter, speed * 2);
+				    	clearTimeout(typeWriter);
+				    }*/
+				    i++;
+				    setTimeout(typeWriter, speed);
+				    if (i == txt[j].length) {
+					    if (j < 2) {
+					   		j++;
+					   		i = 0;
+					    }
+				    }
+			  }
+			  clearTimeout(typeWriter);
+			}
+			window.onload = typeWriter;
+		</script>
+		<div class=buttons-wrapper>
+			<a href="#resume"><button type="button">Résumé</button></a>
+			<a href="#portfolio"><button type="button">Portfolio</button></a>
+			<img src="images/Capture.PNG" alt="decorative picture of code" id="pic"></img>
+			<a href="#about"><button type="button">About Me</button></a>
+		</div> 
+	</div>
+
+	<div class="resume" id="resume">
+		<ul>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+		</ul>
+		<br>
+	</div>
+
+	<div class="portfolio" id="portfolio">
+		<ul>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+		</ul>
+		<br>
+	</div>
+
+	<div class="about" id="about">
+		<ul>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+			<li>detail</li>
+		</ul>
+		<br>
+	</div>
+
+	<footer class="footer">
+		<button type="button">Contact me.</button><!-- maybe add copyright here ? -->
+		<a href="#top">back to top</a>
+	</footer>
+</body>
+</html>
