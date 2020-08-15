@@ -1,19 +1,115 @@
 body {
 	background: #F8F8FF;
 	font-size: 18px;
+	margin: 0px 0px 0px;
+	clear: both;
+	/*border: 2px dashed green;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+	/*height: calc(100vh - 59px);*/
+	height: 100vh;
+}
+
+#about {
+	height: 100vh;
+}
+
+#portfolio {
+	height: 100vh;
+}
+
+#portfolio {
+	height: 100vh;
+}
+
+#contact {
+	height: 40vh;
+	background: #100C08;
+}
+
+#about #brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 90px;
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+#portfolio #brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 90px;
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+#resume #brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 90px;
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+#contact #brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 90px;
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+.header-left {
+	width: 50%;
+	height: 100%;
+	background: #C28485;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.header-right {
+	width: 50%;
+	float:right;
+	height: 100%;
+	background: #7B808E;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.home {
+	/*height: calc(100vh - 59px);*/
+	height: 60vh;
 }
 
 .navbar {
-	font-family: 'Open Sans', sans-serif;
+	background: #F8F8FF;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Pacifico', cursive;
 	margin: 0;
 	padding: 0;
+	/*border: 2px solid red;*/
+	display: block;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#nav-brand {
+	font-size: 25px;
+	padding: 10px;
 }
 
 #brand {
-	font-size: 22px;
+	font-size: 25px;
+	padding: 10px;
 }
 
-#brand:hover {
+#nav-brand:hover {
 	color: black;
 }
 
@@ -30,8 +126,19 @@ ul {
 }
 
 .navbar li {
+	font-size: 25px;
 	float: right;
-	padding: 5px;
+	padding: 10px 5px 10px 5px;
+	display: inline-flex;
+}
+
+.navbar li:before { 
+	content: '·';
+	padding-right: 10px;
+}
+
+.navbar li:last-of-type:before { 
+	content: none;
 }
 
 .navbar a {
@@ -41,19 +148,80 @@ ul {
 }
 
 .navbar a:hover {
-	color: gray;
+	color: #BDC0C7;
 }
 
 .site-wrapper {
-	padding-top: 20px;
 	font-family: 'Roboto', sans-serif;
+	/*border: 2px solid blue;*/
+	height: 100%;
+}
+
+
+#top-txt {
+	padding-top: 15%;
+	margin: 0;
+}
+
+#btm-txt {
+	margin: 0;
 }
 
 .scrolling-text {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-size: 75px;
 	text-align: center;
-	height: 10%;
+	/*border: 2px solid yellow;*/
+	background-color: #2A2E45;
+	color: #F8F8FF;
+	height: 100vh;
+}
+
+.scrolling-text p {
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+.scrolling-text #brand {
+	display: inline;
+	float: left;
+}
+
+.scrolling-text ul {
+	font-family: 'Open Sans', sans-serif;
+	bottom: 60%;
+	align-self: center;
+}
+
+.scrolling-text li {
+	font-size: 25px;
+	padding: 10px 5px 10px 5px;
+	display: inline-flex;
+}
+
+.scrolling-text li:before { 
+	content: '·';
+	padding-right: 10px;
+}
+
+.scrolling-text li:first-of-type:before { 
+	content: none;
+}
+
+.scrolling-text a {
+	text-decoration: none;
+	display: block;
+	color: #F8F8FF;
+	text-shadow: 2px 3px #100C08;
+}
+
+.scrolling-text a:hover {
+	color: #BDC0C7;
+}
+
+#greeting {
+	height: 85vh;
 }
 
 .buttons-wrapper {
@@ -64,6 +232,7 @@ ul {
 	justify-content: center;
 	display: flex;
 	height: 50vh;
+	/*border: 2px solid orange;*/
 }
 
 .buttons-wrapper a {
@@ -72,14 +241,14 @@ ul {
 }
 
 button {
-	font-family: 'Open Sans', sans-serif;
-	background-color: black;
+	font-family: 'Pacifico', cursive;
+	background-color: #100C08;
 	border: none;
-	color: white;
+	color: #F8F8FF;
 	text-align: center;
 	height: 100%;
 	width: 25%;
-	outline: 3px solid white;
+	outline: 3px solid #F8F8FF;
 	transition: all ease-in-out 300ms;
 	font-size: 16px;
 }
@@ -90,25 +259,32 @@ button {
 }
 
 button:hover {
-	outline: 3px solid white;
+	outline: 3px solid #F8F8FF;
 	outline-offset: -8px;
 }
 
 #pic {
 	height: 100%;
 	width: 25%;
-	outline: 3px solid white;
+	outline: 3px solid #F8F8FF;
 }
 
 .footer {
-	background-color: #F8F8FF;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+	display: inline;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 6%;
 	padding-bottom: 0.5em;
+}
+
+.footer a {
+	height: 100%;
+	width: 15%;
+}
+
+.footer button {
+	width: 10%;
+	float: right;
 }
