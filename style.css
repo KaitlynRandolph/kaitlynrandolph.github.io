@@ -1,3 +1,5 @@
+/* social media icons by IconBunny from https://www.graphicsfuel.com/2017/08/1400-social-media-icons-free/ */
+
 body {
 	background: #F8F8FF;
 	font-size: 18px;
@@ -15,55 +17,27 @@ html {
 	height: 100vh;
 }
 
-#about {
-	height: 100vh;
-}
-
-#portfolio {
-	height: 100vh;
-}
-
-#portfolio {
-	height: 100vh;
-}
-
 #contact {
 	height: 40vh;
-	background: #100C08;
 }
 
-#about #brand {
+.section #brand {
 	font-family: 'Pacifico', cursive;
 	font-size: 90px;
 	color: #F8F8FF;
 	text-shadow: 2px 3px #100C08;
 }
 
-#portfolio #brand {
+.section #brand-dark {
 	font-family: 'Pacifico', cursive;
 	font-size: 90px;
-	color: #F8F8FF;
-	text-shadow: 2px 3px #100C08;
-}
-
-#resume #brand {
-	font-family: 'Pacifico', cursive;
-	font-size: 90px;
-	color: #F8F8FF;
-	text-shadow: 2px 3px #100C08;
-}
-
-#contact #brand {
-	font-family: 'Pacifico', cursive;
-	font-size: 90px;
-	color: #F8F8FF;
-	text-shadow: 2px 3px #100C08;
+	color: #100C08;
+	/*text-shadow: 2px 3px #100C08;*/
 }
 
 .header-left {
 	width: 50%;
 	height: 100%;
-	background: #C28485;
 	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -73,7 +47,6 @@ html {
 	width: 50%;
 	float:right;
 	height: 100%;
-	background: #7B808E;
 	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -110,7 +83,7 @@ html {
 }
 
 #nav-brand:hover {
-	color: black;
+	color: #100C08;
 }
 
 .navbar div {
@@ -144,11 +117,7 @@ ul {
 .navbar a {
 	text-decoration: none;
 	display: block;
-	color: black;
-}
-
-.navbar a:hover {
-	color: #BDC0C7;
+	color: #100C08;
 }
 
 .site-wrapper {
@@ -159,7 +128,7 @@ ul {
 
 
 #top-txt {
-	padding-top: 15%;
+	padding-top: 5%;
 	margin: 0;
 }
 
@@ -168,14 +137,13 @@ ul {
 }
 
 .scrolling-text {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Merriweather', serif;
 	/*font-family: 'Open Sans', sans-serif;*/
-	font-size: 75px;
+	font-size: 65px;
 	text-align: center;
 	/*border: 2px solid yellow;*/
 	background-color: #2A2E45;
 	color: #F8F8FF;
-	height: 100vh;
 }
 
 .scrolling-text p {
@@ -189,8 +157,6 @@ ul {
 }
 
 .scrolling-text ul {
-	font-family: 'Open Sans', sans-serif;
-	bottom: 60%;
 	align-self: center;
 }
 
@@ -213,15 +179,15 @@ ul {
 	text-decoration: none;
 	display: block;
 	color: #F8F8FF;
-	text-shadow: 2px 3px #100C08;
+	text-shadow: 1px 2px #100C08;
 }
 
-.scrolling-text a:hover {
+a:hover {
 	color: #BDC0C7;
 }
 
 #greeting {
-	height: 85vh;
+	height: 80%;
 }
 
 .buttons-wrapper {
