@@ -20,6 +20,10 @@ html {
 		color: #100C08;
 	}
 
+	section {
+		height: 100vh;
+	}
+
 	.title {
 		text-align: center;
 		padding-top: 3%;
@@ -53,6 +57,17 @@ html {
 	  	display: flex;
 	  	margin: 0;
 	  	flex-direction: column;
+	  	overflow: scroll;
+	  	height: 50vh;
+	}
+
+	.alt-info {
+	  	background-color: #F0F8FF;
+	  	display: flex;
+	  	margin: 0;
+	  	flex-direction: column;
+	  	overflow: scroll;
+	  	height: 50vh;
 	}
 
 	.brand {
@@ -166,6 +181,10 @@ html {
 		color: #100C08;
 	}
 
+	section {
+		height: 100vh;
+	}
+
 	.title {
 		text-align: center;
 		padding-top: 5%;
@@ -183,8 +202,14 @@ html {
 
 	header {
 		text-align: center;
-		display: table-cell;
-		vertical-align: middle;
+		display: inline-block;
+		height: 100vh;
+		width: 50%;
+		float: left;
+	}
+
+	.alt-header {
+		float: right;
 	}
 
 	div {
@@ -195,10 +220,22 @@ html {
 
 	.info {
 	  	background-color: #F0F8FF;
-	  	display: table-cell;
+	  	display: block;
 	  	margin: 0;
 	  	flex-direction: column;
 	  	width: 50%;
+	  	height: 100vh;
+	  	overflow-y: scroll;
+	}
+
+	.alt-info {
+	  	background-color: #F0F8FF;
+	  	display: block;
+	  	margin: 0;
+	  	flex-direction: column;
+	  	width: 50%;
+	  	height: 100vh;
+	  	overflow-y: scroll;
 	}
 
 	.brand {
@@ -206,6 +243,7 @@ html {
 		font-size: 65px;
 		color: #F0F8FF;
 		text-shadow: 2px 3px #100C08;
+		line-height: 100vh
 	}
 
 	ul {
