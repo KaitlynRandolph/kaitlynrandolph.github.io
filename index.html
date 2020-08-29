@@ -8,94 +8,102 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&Open+Sans:wght@600&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar" id="navbar">
+	<!--nav class="navbar" id="navbar">
 		<div>
-	    	<a id="nav-brand" href="#top" onmouseover="this.innerHTML='Kaitlyn Randolph';"
-              onmouseout="this.innerHTML='Kaitlyn.io';">Kaitlyn.io</a>
+	    	<a id="nav-brand" href="#top">Kaitlyn Randolph</a>
 	    </div>
 		<ul>
 			<li><a href="#contact">Contact</a></li>
-			<li><a href="#resume">Résumé</a></li>
+			<li><a href="#skills">Skills</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#about">About</a></li>
 		</ul>
-	</nav>
-	<div class="site-wrapper">
-		<div class="scrolling-text home section" id="top">
+	</nav-->
+		<section class="scrolling-text" id="top">
 			<div id="greeting">
 				<p class="text" id="top-txt"></p>
-				<p class="text" id="btm-txt"></p>
 			</div>
 
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#resume">Résumé</a></li>
+				<li><a href="#skills">Skills</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		</div>
+		</section>
 		<script>
 			/* Adapted from https://www.w3schools.com/howto/howto_js_typewriter.asp */
 			var i = 0;
 			var j = 0;
-			var speed = 80;
-			let txt = ["Hi, I'm Kaitlyn.", " I'm a web developer.", " Thanks for checking out my website."];
+			var speed = 105;
+			let txt = ["Hi, I'm Kaitlyn. I'm a web developer."];
 
 			function typeWriter() {
 			  	if (i < txt[j].length) {
-			  		if (j <= 1) {
-				    	document.getElementById("top-txt").innerHTML += txt[j].charAt(i);
-				    } else {
-				    	document.getElementById("btm-txt").innerHTML += txt[j].charAt(i);
-				    }
+				    document.getElementById("top-txt").innerHTML += txt[j].charAt(i);
 				    i++;
 				    setTimeout(typeWriter, speed);
-				    if (i == txt[j].length) {
-					    if (j < 2) {
-					   		j++;
-					   		i = 0;
-					    }
-				    }
 			  }
 			  clearTimeout(typeWriter);
 			}
 			window.onload = typeWriter;
+
+
+			
 		</script>
-		<!--div class=buttons-wrapper>
-			<a href="#resume"><button type="button">Résumé</button></a>
-			<a href="#portfolio"><button type="button">Portfolio</button></a>
-			<img src="images/Capture.PNG" alt="decorative picture of code" id="pic"></img>
-			<a href="#about"><button type="button">About Me</button></a>
-		</div--> 
 
-	<div class="about section" id="about">
-		<div class="header-left" style="background-image: linear-gradient(#2A2E45, #5F4E6A);">
-			<a id="brand">About</a>
+	<section class="about" id="about">
+		<header style="background-image: linear-gradient(#2A2E45, #4B3C65);">
+			<a class="brand">About</a>
+		</header>
+		<div class="info">
+			<div class="title"> Test Header Here </div>
+			<div class="text-body">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta est nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula eros ex, a feugiat lectus posuere ultrices. Nullam vulputate id enim ac pharetra. Phasellus gravida dolor eget quam congue tincidunt. Curabitur et tempus tellus, vitae scelerisque orci. Vivamus maximus tellus ut est sodales, et fermentum nisl vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed augue ex. Aliquam imperdiet massa non elit venenatis, facilisis ultricies enim finibus. Aenean aliquet elementum urna sit amet mollis. Phasellus feugiat, mi non mattis porttitor, quam nibh aliquam turpis, pharetra efficitur magna lorem id augue. Ut sit amet diam et massa tristique ullamcorper ut sed elit. Sed nulla dui, pretium sed posuere sit amet, elementum vel metus.
+			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="portfolio section" id="portfolio">
-		<div class="header-right" style="background-image: linear-gradient(#5F4E6A, #75B9B3);">
-			<a id="brand">Portfolio</a>
+	<section class="portfolio" id="portfolio">
+		<div class="info">
+			<div class="title"> Test Header Here </div>
+			<div class="text-body">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta est nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula eros ex, a feugiat lectus posuere ultrices. Nullam vulputate id enim ac pharetra. Phasellus gravida dolor eget quam congue tincidunt. Curabitur et tempus tellus, vitae scelerisque orci. Vivamus maximus tellus ut est sodales, et fermentum nisl vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed augue ex. Aliquam imperdiet massa non elit venenatis, facilisis ultricies enim finibus. Aenean aliquet elementum urna sit amet mollis. Phasellus feugiat, mi non mattis porttitor, quam nibh aliquam turpis, pharetra efficitur magna lorem id augue. Ut sit amet diam et massa tristique ullamcorper ut sed elit. Sed nulla dui, pretium sed posuere sit amet, elementum vel metus.
+			</div>
 		</div>
-	</div>
+		<header style="background-image: linear-gradient(#4B3C65, #5B4375);">
+			<a class="brand">Portfolio</a>
+		</header>
+	</section>
 
-	<div class="resume section" id="resume">
-		<div class="header-left" style="background-image: linear-gradient(#75B9B3, #B5FED9);">
-			<a id="brand">Résumé</a>
+	<section class="skills" id="skills">
+		<header style="background-image: linear-gradient(#5B4375, #6B4984);">
+			<a class="brand">Skills</a>
+		</header>
+		<div class="info">
+			<div class="title"> Test Header Here </div>
+			<div class="text-body">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta est nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula eros ex, a feugiat lectus posuere ultrices. Nullam vulputate id enim ac pharetra. Phasellus gravida dolor eget quam congue tincidunt. Curabitur et tempus tellus, vitae scelerisque orci. Vivamus maximus tellus ut est sodales, et fermentum nisl vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed augue ex. Aliquam imperdiet massa non elit venenatis, facilisis ultricies enim finibus. Aenean aliquet elementum urna sit amet mollis. Phasellus feugiat, mi non mattis porttitor, quam nibh aliquam turpis, pharetra efficitur magna lorem id augue. Ut sit amet diam et massa tristique ullamcorper ut sed elit. Sed nulla dui, pretium sed posuere sit amet, elementum vel metus.
+			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="contact section" id="contact">
-		<div class="header-right" style="background-image: linear-gradient(#B5FED9, #F8F8FF);">
-			<a id="brand-dark">Contact</a>
+	<section class="contact" id="contact">
+		<div class="info">
+			<div class="title"> Test Header Here </div>
+			<div class="text-body">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta est nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vehicula eros ex, a feugiat lectus posuere ultrices. Nullam vulputate id enim ac pharetra. Phasellus gravida dolor eget quam congue tincidunt. Curabitur et tempus tellus, vitae scelerisque orci. Vivamus maximus tellus ut est sodales, et fermentum nisl vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed augue ex. Aliquam imperdiet massa non elit venenatis, facilisis ultricies enim finibus. Aenean aliquet elementum urna sit amet mollis. Phasellus feugiat, mi non mattis porttitor, quam nibh aliquam turpis, pharetra efficitur magna lorem id augue. Ut sit amet diam et massa tristique ullamcorper ut sed elit. Sed nulla dui, pretium sed posuere sit amet, elementum vel metus.
+			</div>
 		</div>
-	</div>
-	
-	</div>
+		<header style="background: #6B4984;">
+			<a class="brand">Contact</a>
+		</header>
+	</section>
 
-	<footer class="footer">
-		<a href="#top"><button type="button">To The Top</button></a><!-- maybe add copyright here ? -->
-	</footer>
+	<section class="footer">
+		<div class="footer-text">
+			<p>©2020 Kaitlyn Randolph</p>
+		</div>
+	</section>
 </body>
 </html>
