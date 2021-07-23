@@ -9,16 +9,20 @@ html {
   scroll-behavior: smooth;
 }
 
-@media(max-width: 640px) {
-	body {
+body {
 		font-family: 'Merriweather', serif;
 		background: #F0F8FF;
 		font-size: 18px;
-		margin: 0px 0px 0px;
-		clear: both;
+		margin: 0;
+		padding: 0;
 		width: 100%;
-		height: 100%;
 		color: #100C08;
+		overflow-x: hidden;
+	}
+
+@media(max-width: 640px) {
+	body {
+		font-size: 18px;
 	}
 
 	section {
@@ -136,22 +140,15 @@ html {
 		color: #64B6AC;
 	}
 
-	.to-top {
+	/*.to-top {
 		margin-right: 2%;
 	    margin-bottom: 2%;
-	}
+	}*/
 }
 
 @media(min-width: 640px) {
 	body {
-		font-family: 'Merriweather', serif;
-		background: #F0F8FF;
 		font-size: 20px;
-		margin: 0px 0px 0px;
-		clear: both;
-		width: 100%;
-		height: 100%;
-		color: #100C08;
 	}
 
 	section {
@@ -276,10 +273,10 @@ html {
 		color: #64B6AC;
 	}
 
-	.to-top {
+	/*.to-top {
 		margin-right: 0.5%;
 	    margin-bottom: 0.5%;
-	}
+	}*/
 }
 
 .content-wrapper {
